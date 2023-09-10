@@ -14,8 +14,10 @@ char isempty(struct sll * l)
 {
     if((*l).head==NULL)
     {
-        printf("Empty list\n");
+    return 1;
     }
+    else
+    return 0;    
 }
 void traverse(struct sll * a)
 {
@@ -85,12 +87,13 @@ void main()
     {
         case 1: 
         
-        isempty(s);
+        if(isempty(s)==1)
+        printf("Empty list\n");
         break;
 
         case 2: 
-        if(isempty)
-        printf("Can't be traversed");
+        if(isempty(s)==1)
+        printf("Can't be traversed\n");
         else
         {
         traverse(s);
