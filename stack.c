@@ -67,9 +67,9 @@ int main()
     struct stack * st = (struct stack *)malloc(sizeof(struct stack));
     printf("Enter the size of the stack: ");
     scanf("%d",&((*st).size));
-    (*st).top=0;
+    (*st).top=-1;
     struct student * sarr=(struct student *)malloc(sizeof(struct student));
-    st->sarr=(struct student *)malloc((st->size+1)* sizeof(struct student));
+    st->sarr=(struct student *)malloc((st->size)* sizeof(struct student));
     do{
     printf("***********MENU***********\n");
     printf("1.IsEmpty\n2.IsFull\n3.Push\n4.Pop\n5.Peek\n");
